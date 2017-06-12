@@ -32,12 +32,12 @@
     </center>
     <div class="container well">
         <div class="row-fluid">
-                <ul class="nav nav-tabs col-md-10 col-md-offset-1">
-                    <li class="active"><a href="#tab1" data-toggle="tab">Personal Data</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Education</a></li>
-                    <li><a href="#tab3" data-toggle="tab">Current Job</a></li>
-                    <li><a href="#tab4" data-toggle="tab">Previous Jobs</a></li>
-                    <li><a href="#tab5" data-toggle="tab">Summary</a></li>
+                <ul class="nav nav-tabs col-md-10 col-md-offset-1" id="mytabs">
+                    <li class="active"><a href="#tab1" id="pdata_tab" data-toggle="tab">Personal Data</a></li>
+                    <li><a href="#tab2" id="edu_tab" data-toggle="tab">Education</a></li>
+                    <li><a href="#tab3" id="cjob_tab" data-toggle="tab">Current Job</a></li>
+                    <li><a href="#tab4" id="pjob_tab" data-toggle="tab">Previous Jobs</a></li>
+                    <li><a href="#tab5" id="summary_tab" data-toggle="tab">Summary</a></li>
                 </ul>
             </div>
             <div class="row-fluid">
@@ -63,7 +63,7 @@
                                         </select><br/>
                                         <label id="lbl_firstname">First Name<span style="color: red; font-style: italic; text-align: right">*</span> </label>
                                         <input type="text" name="firstname" id="firstname" class="form-control" runat="server" style="text-transform: uppercase;" required="required" /><br/>
-                                        <label id="lbl_lastname">Last Name </label>
+                                        <label id="lbl_lastname">Last Name<span style="color: red; font-style: italic; text-align: right">*</span> </label>
                                         <input type="text" name="lastName" id="lastname" class="form-control" runat="server" style="text-transform: uppercase;" /><br/> 
                                         <label id="lbl_gender">Gender<span style="color: red; font-style: italic; text-align: right">*</span> </label>
                                         <select class="form-control" id="gender" name="gender" runat="server" required="required">
@@ -113,7 +113,7 @@
                             </div>
                             <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
                                 <center>
-                                     <a class="btn btn-primary custom-btn">Next &raquo;<%--<i class="fa fa-chevron-right"></i>--%></a>
+                                     <a class="btn btn-primary custom-btn" onclick="document.getElementById('edu_tab').click();">Next &raquo;<%--<i class="fa fa-chevron-right"></i>--%></a>
                                 </center>                               
                             </div>
                     </div>
@@ -218,8 +218,8 @@
                         </div>                        
                         <div class="row" style="margin-top: 20px; margin-bottom: 20px; ">
                             <center>
-                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline"> &laquo; Back</a> &nbsp;
-                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline">Next &raquo;</a>
+                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline" onclick="document.getElementById('pdata_tab').click();"> &laquo; Back</a> &nbsp;
+                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline" onclick="document.getElementById('cjob_tab').click();">Next &raquo;</a>
                             </center>                               
                         </div>                         
                     </div>      
@@ -254,8 +254,8 @@
                         </div>                        
                         <div class="row" style="margin-top: 20px; margin-bottom: 20px; ">
                             <center>
-                                <a class="btn btn-primary custom-btn" style="display:inline" "> &laquo; Back</a> &nbsp;
-                                <a class="btn btn-primary custom-btn" style="display:inline" ">Next &raquo;</a>
+                                <a class="btn btn-primary custom-btn" style="display:inline"  onclick="document.getElementById('edu_tab').click();" > &laquo; Back</a> &nbsp;
+                                <a class="btn btn-primary custom-btn" style="display:inline" onclick="document.getElementById('pjob_tab').click();">Next &raquo;</a>
                             </center>                               
                         </div>                         
                     </div> 
@@ -292,8 +292,8 @@
                         </div>                        
                         <div class="row" style="margin-top: 40px; margin-bottom: 20px; ">
                             <center>
-                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline"> &laquo; Back</a> &nbsp;
-                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline">Preview &raquo;</a>
+                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline" onclick="document.getElementById('cjob_tab').click();"> &laquo; Back</a> &nbsp;
+                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline" onclick="document.getElementById('summary_tab').click();">Preview &raquo;</a>
                             </center>                               
                         </div>                         
                     </div> 
@@ -306,7 +306,7 @@
                         </div>
                         <div class="row" style="margin-top: 40px; margin-bottom: 20px; ">
                             <center>
-                                <a class="btn btn-primary custom-btn" style="display:inline"> &laquo; Back</a> &nbsp;
+                                <a class="btn btn-primary custom-btn" style="display:inline" onclick="document.getElementById('pjob_tab').click();"> &laquo; Back</a> &nbsp;
                                 <asp:LinkButton CssClass="btn btn-success custom-btn" ID="submit" style="display:inline" OnClick="submit_Click" runat="server">Submit &check;</asp:LinkButton><br />
                             </center>                               
                         </div> 
@@ -331,6 +331,7 @@
     <script src="../Scripts/bootstrap.min.js"></script>
     <script src="../Scripts/tabs-addon.js"></script>
     <script src="../App_JS/common.js"></script>
+    <script src="../App_JS/sharedjs.js"></script>
     <script src="../App_JS/validation.js"></script>
     <script>
         getWindowHeight();
