@@ -3,6 +3,7 @@ using NIOB.BusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -23,7 +24,16 @@ namespace NIOB.Register
         protected void submit_Click(object sender, EventArgs e)
         {
             //validate required field
-            if (!validateEmail())
+            //if (!checkValidation())
+            //{
+                
+            //    return;
+            //}
+
+            //if (Page.IsValid) {
+
+            //}
+            if (!checkValidation())
             {
                 return;
             }
@@ -40,37 +50,37 @@ namespace NIOB.Register
             ////collect html field values into user info params
             //biodata
             userbiodata.Title = title.Value;
-            userbiodata.Firstname = firstname.Value;
-            userbiodata.Surname = lastname.Value;
+            userbiodata.Firstname = firstname.Value.Trim();
+            userbiodata.Surname = lastname.Value.Trim();
             userbiodata.DOB = Request.Form["dob"].ToString();
             userbiodata.Gender = gender.Value;
-            userbiodata.PhoneNumber = phoneno.Value;
+            userbiodata.PhoneNumber = phoneno.Value.Trim();
             userbiodata.State = state.Value;
 
             //tbl_user info
-            usertbl_user.Username = username.Value;
-            usertbl_user.Password = password.Value;
-            usertbl_user.Email = email.Value;
+            usertbl_user.Username = username.Value.Trim();
+            usertbl_user.Password = password.Value.Trim();
+            usertbl_user.Email = email.Value.Trim();
             usertbl_user.UserType = 1;
 
             //address info
-            useraddressinfo.Street = houseAddress.Value;
+            useraddressinfo.Street = houseAddress.Value.Trim();
             useraddressinfo.LGA = lga.Value;
             useraddressinfo.State = state.Value;
 
             //employment info
             userempinfo.Title = designation.Value;
-            userempinfo.Employer = employername.Value;
-            userempinfo.Scope = scopeofresp.Value;
-            userempinfo.Address = employeraddress.Value;
+            userempinfo.Employer = employername.Value.Trim();
+            userempinfo.Scope = scopeofresp.Value.Trim();
+            userempinfo.Address = employeraddress.Value.Trim();
             userempinfo.StartDate = Request.Form["appointmentdate"];
             userempinfo.Status = "current";
 
             //education info
-            usereduinfo.Primary = primary.Value;
-            usereduinfo.Secondary = secondary.Value;
-            usereduinfo.Technical = technical.Value;
-            usereduinfo.Tertiary = tertiary.Value;
+            usereduinfo.Primary = primary.Value.Trim();
+            usereduinfo.Secondary = secondary.Value.Trim();
+            usereduinfo.Technical = technical.Value.Trim();
+            usereduinfo.Tertiary = tertiary.Value.Trim();
             usereduinfo.PrimaryCert = primaryCert.Value;
             usereduinfo.SecondaryCert = secondaryCert.Value;
             usereduinfo.TechnicalCert = technicalCert.Value;
@@ -81,8 +91,8 @@ namespace NIOB.Register
             userdocinfo.DocumentUrl = primarycertUpload.Value;
             
             //association
-            userassociation.Name = associationname.Value;
-            userassociation.PositionHeld = positionheld.Value;
+            userassociation.Name = associationname.Value.Trim();
+            userassociation.PositionHeld = positionheld.Value.Trim();
             userassociation.Datejoined = Request.Form["assodatejoined"];
 
             //inject user info into user object
@@ -113,10 +123,94 @@ namespace NIOB.Register
             }
         }
 
-        private bool validateEmail()
+
+        public bool checkValidation()
         {
-            throw new NotImplementedException();
+           
+            if (title.Value.Trim() == "")
+            {
+                return false;
+            }
+
+            if (firstname.Value.Trim() == "")
+            {
+                return false;
+            }
+
+            if (lastname.Value.Trim() == "")
+            {
+                return false;
+            }
+            if (gender.Value == "")
+            {
+                return false;
+            }
+            if (username.Value.Trim() == "")
+            {
+                return false;
+            }
+            if (password.Value.Length > 8)
+            {
+                return false;
+            }
+
+            if (EmailPhoneVal.checkForEmail(email.Value.Trim()) != true)
+            {
+                return false;
+            }
+
+            if (EmailPhoneVal.checkForPhoneNumber(phoneno.Value.Trim()) != true)
+            {
+                return false;
+            }
+
+            else
+            {
+                return true;
+            }
         }
+
+
+
+        //private bool validateEmail()
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //private bool validateTitle()
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //private bool validateFirstName()
+        //{
+        //    throw new NotImplementedException();
+        //}
+        //private bool validateLastName()
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //private bool validateGender()
+        //{
+        //    throw new NotImplementedException();
+        //}
+        //private bool validateDOB()
+        //{
+        //    throw new NotImplementedException();
+        //}
+        //private bool validateUsername()
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //private bool validatePassword()
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+
+      
 
         private void populateDDLs()
         {
