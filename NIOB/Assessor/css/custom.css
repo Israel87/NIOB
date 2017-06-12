@@ -1,0 +1,108 @@
+.page-header span.page-header-text {
+	color:seagreen;
+	font-weight:700;
+	font-size:38px;
+	font-family: Calibri;
+	margin-left: 10px;
+}
+
+.page-header {
+	padding: 0 20px 0 20px;
+}
+
+.page-header img {
+        height:100px; 
+        padding-bottom: 10px;
+        display: inline;
+}
+
+.sidebar {
+    width: 225px;
+}
+
+.sidebar+.main-content {
+    margin-left: 225px;
+}
+
+.sidebar~.footer .footer-inner {
+    margin-left: 225px;
+    left: 0;
+}
+
+ul.nav.nav-list>li>a{
+    background-color: mediumseagreen;
+    color: white;
+}
+
+ul.nav.nav-list>li.active>a, ul.nav.nav-list>li.active>a:focus, ul.nav.nav-list>li.active>a:hover {
+    background-color: palegreen;
+    color: #fff;
+}
+
+div#sidebar-shortcuts.sidebar-shortcuts {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.no-skin .sidebar {
+    background-color: mediumseagreen;
+    color: white;
+    font-family: Calibri;
+
+}
+
+@media (max-width:767px) {
+    .page-header span.page-header-text {
+	    color:seagreen;
+	    font-weight:600;
+	    font-size:28px;
+	    font-family: Calibri;
+	    margin-top: 0px;
+        margin-left: 0px;
+        text-align:center;
+        display: block;
+    }
+
+    .page-header img {
+	    margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0px;
+        display: block;
+    }
+}
+
+@media (max-width:991px) {
+    .sidebar~.footer .footer-inner {
+    margin-left: 0;
+    }
+    #menu-toggler {
+        width: 0px;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+        /*background-color: none;*/
+    }
+
+    #menu-toggler-copy {
+        width: 0px;
+        padding: 0;
+        margin: 0;
+        margin-top: -10px;
+        background-color: grey;
+    }
+    .main-container #menu-toggler {
+        background-color: white; 
+    }
+
+    #menu-toggler-copy {
+        background-color: grey; 
+    }
+    .sidebar {
+        z-index: 1001;
+        position: fixed;
+        width: 170px;
+        padding-top: 0px;
+        height: 100%;
+        /*margin-top: 150px;*/
+    }
+}

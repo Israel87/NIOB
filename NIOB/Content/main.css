@@ -1,0 +1,107 @@
+﻿body {
+    background-color: #fff;
+}
+
+.tabbable.custom-tabs.shadow>.tab-content {
+    background-color: whitesmoke;
+}
+
+#header_image {
+    padding: 5px;
+}
+
+._icon {
+    font-size: 18px;
+}
+
+.footer{
+    margin-top: 20px;
+    height: 30px;
+    bottom: 0;
+    position: relative;
+    padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+#tab_perInfo{
+    width: 18%;
+}
+
+#tab2{
+    width: 20%;
+}
+
+#tab3{
+    width: 25%;
+}
+
+#tab4{
+    width: 20%;
+}
+
+#tab_summary{
+    width: 17%;
+}
+
+#image2 {
+    display: none;
+}
+
+#image1 {
+    padding-bottom:80px;
+}
+
+@media screen and (max-width: 1200px) {
+	
+    #tab_panel1, #tab_panel2, #tab_panel3, #tab_panel4, #tab_panel5  {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+	
+    #tab_panel1, #tab_panel2, #tab_panel3, #tab_panel4, #tab_panel5 {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hide_space {
+        display: none;
+    }
+    #tab_perInfo{
+        width: 20%;
+    }
+
+    #tab2{
+        width: 20%;
+    }
+
+    #tab3{
+        width: 20%;
+    }
+
+    #tab4{
+        width: 20%;
+    }
+
+    #tab_summary{
+        width: 20%;
+    }
+
+
+    #image2 {
+        display: block;
+        padding-bottom:40px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #image1 {
+        display: none;
+    }
+}
