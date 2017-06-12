@@ -301,7 +301,264 @@
                     <!-- Tab 5 -->
                     <div class="tab-pane" id="tab5">
                         <h4 class="tab-headertext greentext">Summary</h4>
-                        <div>
+                        <div class="row-fluid">
+                        
+                        <h4>Personal Data</h4>
+                   <table class="panel-body">    
+                        <tr>
+                         <td><label >Title:&nbsp;</label> </td>
+                         <td><label runat="server"></label></td>
+                         </tr>
+
+                        
+                         <tr>
+<td>
+                          <label>Firstname:&nbsp;</label></td>
+                        <td>  <label  runat="server"></label>
+</td>
+                          </tr>
+
+                          <tr>
+                          <td><label >Lastname:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Gender:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+
+                           <tr>
+                          <td><label >Date of Birth:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Mobile Phone:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Email Address:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Mobile Phone:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Username:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Residential Address:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >State of Origin:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label > LGA:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Photograph:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+
+
+
+
+
+
+</table><br>
+
+
+
+
+<h4>Education</h4>
+                   <table class="panel-body">    
+                        <tr>
+                         <td><label >Primary School:&nbsp;</label> </td>
+                         <td><label runat="server"></label></td>
+                         </tr>
+
+                        
+                         <tr>
+<td>
+                          <label>Primary Certificate Obtained:&nbsp;</label></td>
+                        <td>  <label  runat="server"></label>
+</td>
+                          </tr>
+
+                          <tr>
+                          <td><label >Secondary School:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           
+                           <tr>
+                          <td><label >Secondary Certificate Obtained:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Technical/NVQ:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Technical Certificate Obtained:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Tertiary Institution:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Tertiary Certificate Obtained :&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label> Membership of Other Trade Associations :&nbsp;</label></td>
+                         
+                          </tr>
+
+                           <tr>
+                          <td><label >Name of Trade Association:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Name of Trade Association :&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Position Held:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                          <tr>
+                          <td><label >Date Joined:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+
+</table><br><br>
+
+<h4>Current Job</h4>
+                   <table class="panel-body">    
+                        <tr>
+                         <td><label >Title/ Designation:&nbsp;</label> </td>
+                         <td><label runat="server"></label></td>
+                         </tr>
+
+                        
+                         <tr>
+<td>
+                          <label>Scope of Responsibility:&nbsp;</label></td>
+                        <td>  <label  runat="server"></label>
+</td>
+                          </tr>
+
+                          <tr>
+                          <td><label >Employer Name/ Project Name:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           
+                           <tr>
+                          <td><label >Address:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Appointment Date:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                          
+
+
+
+
+
+</table>
+
+<h4>Previous Jobs </h4>
+                   <table class="panel-body">    
+                        <tr>
+                         <td><label >Employer Name/ Project Name :&nbsp;</label> </td>
+                         <td><label runat="server"></label></td>
+                         </tr>
+
+                        
+                         <tr>
+<td>
+                          <label>From :&nbsp;</label></td>
+                        <td>  <label  runat="server"></label>
+</td>
+                          </tr>
+
+                          <tr>
+                          <td><label >To:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           
+                                         
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
 
                         </div>
                         <div class="row" style="margin-top: 40px; margin-bottom: 20px; ">
