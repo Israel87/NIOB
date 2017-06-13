@@ -40,5 +40,5 @@
     </tr>
   </tbody>
 </table> 
-    <div class="center"><input type="button" class="btn btn-success" />Proceed to Payment</div>
+    <div class="center"><input type="button" class="btn btn-success" value="Proceed to Payment" /></div>
 </asp:Content>
