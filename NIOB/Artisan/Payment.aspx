@@ -3,5 +3,42 @@
     <title>NIOB - Payment</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h3>This is the Payment page</h3>   
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Payment Items</th>
+      <th>Amount (Naira)</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><input type="checkbox" /></th>
+      <td>NIOB Registration form</td>
+      <td>N500.00</td>
+     
+    </tr>
+    <tr>
+      <th scope="row"><input type="checkbox" /></th>
+      <td>Non-Refundable Registration Fees</td>
+      <td>N20,000.00</td>
+     
+    </tr>
+    <tr>
+      <th scope="row"><input type="checkbox" /></th>
+      <td>Other Payments</td>
+      <td>N500.00</td>
+     
+    </tr>
+
+       <tr>
+      <th scope="row"></th>
+      <td>Total </td>
+      <td></td>
+     
+    </tr>
+  </tbody>
+</table> 
+    <div class="center"><input type="button" class="btn btn-success" />Proceed to Payment</div>
 </asp:Content>
