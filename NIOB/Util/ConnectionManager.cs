@@ -55,7 +55,10 @@ namespace NIOB.Util
 
             //format date
             string DOB = Convert.ToDateTime(user.biodata.DOB).ToString("dd-MMM-yyyy");
+<<<<<<< HEAD
             string StartDate = Convert.ToDateTime(user.emp_info[0].StartDate).ToString("dd-MMM-yyyy");
+=======
+>>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
             string DateJoined = Convert.ToDateTime(user.association.Datejoined).ToString("dd-MMM-yyyy");
 
 
@@ -87,12 +90,15 @@ namespace NIOB.Util
                 cmd.Parameters.Add(new OracleParameter("V_STREET", OracleDbType.Varchar2, user.address_info.Street, ParameterDirection.Input));
                 cmd.Parameters.Add(new OracleParameter("V_LGA", OracleDbType.Varchar2, user.address_info.LGA, ParameterDirection.Input));
                 //emp info
+<<<<<<< HEAD
                 cmd.Parameters.Add(new OracleParameter("V_EMP_TITLE", OracleDbType.Varchar2, user.emp_info[0].Title, ParameterDirection.Input));
                 cmd.Parameters.Add(new OracleParameter("V_EMPLOYER", OracleDbType.Varchar2, user.emp_info[0].Employer, ParameterDirection.Input));
                 cmd.Parameters.Add(new OracleParameter("V_EMPLOYERADDRESS", OracleDbType.Varchar2, user.emp_info[0].Address, ParameterDirection.Input));
                 cmd.Parameters.Add(new OracleParameter("V_SCOPE", OracleDbType.Varchar2, user.emp_info[0].Scope, ParameterDirection.Input));
                 cmd.Parameters.Add(new OracleParameter("V_STARTDATE", OracleDbType.Date, StartDate, ParameterDirection.Input));
                 cmd.Parameters.Add(new OracleParameter("V_EMPSTATUS", OracleDbType.Varchar2, user.emp_info[0].Status, ParameterDirection.Input));
+=======               
+>>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
                 //tbl_user info
                 cmd.Parameters.Add(new OracleParameter("V_USERNAME", OracleDbType.Varchar2, user.tbl_user.Username, ParameterDirection.Input));
                 cmd.Parameters.Add(new OracleParameter("V_PASSWORD", OracleDbType.Varchar2, user.tbl_user.Password, ParameterDirection.Input));
