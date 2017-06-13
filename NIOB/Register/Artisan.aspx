@@ -113,7 +113,9 @@
                             </div>
                             <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
                                 <center>
+
                                      <a class="btn btn-primary custom-btn" onclick="document.getElementById('edu_tab').click();">Next &raquo;</a>
+
                                 </center>                               
                             </div>
                     </div>
@@ -286,6 +288,7 @@
                                     <label></label>
                                     <div style="margin-top: 10px;">
                                         <a class="btn btn-info custom-btn add-button" style="display:inline"> &plus; Add More </a>
+                                        <%--<a class="btn btn-danger custom-btn delete-button" style="display:inline"> &times; Del</a>--%>
                                     </div>                                    
                                 </div>  
                                 </div>  
@@ -306,6 +309,7 @@
                         <div class="row-fluid">
                             <div class="col-md-6">
                                 <h4>Personal Data</h4>
+
                    <table class="panel-body">    
                         <tr>
                          <td><label >Title:&nbsp;</label> </td>
@@ -375,11 +379,11 @@
                           <td><label runat="server"></label>
                           </td>
                           </tr>
-<<<<<<< HEAD
                             </table><br/>
                             </div>
                             <div class="col-md-6">
                                 <h4>Education</h4>
+
                    <table class="panel-body">    
                         <tr>
                          <td><label >Primary School:&nbsp;</label> </td>
@@ -390,6 +394,7 @@
                          <tr>
 <td>
                           <label>Certificate Obtained:&nbsp;</label></td>
+
                         <td>  <label  runat="server"></label>
 </td>
                           </tr>
@@ -398,9 +403,12 @@
                           <td><label >Secondary School:&nbsp;</label></td>
                           <td><label runat="server"></label>
                           </td>
-                          </tr>                           
+                          </tr>
+
+                           
                            <tr>
                           <td><label >Certificate Obtained:&nbsp;</label></td>
+
                           <td><label runat="server"></label>
                           </td>
                           </tr>
@@ -469,16 +477,16 @@
 
                          <td><label runat="server"></label></td>
                          </tr>
-                      
+
                         
+                         
                           <tr>
                           <td><label >Employer/Project Name:&nbsp;</label></td>
 
                           <td><label runat="server"></label>
                           </td>
                           </tr>
-
-                           
+                                                         
                            <tr>
                           <td><label >Address:&nbsp;</label></td>
                           <td><label runat="server"></label>
@@ -514,9 +522,9 @@
                           <td><label runat="server"></label>
                           </td>
                           </tr>
+<<<<<<< HEAD
 </table>
                    </div>
-
 
                         </div>
                         <div class="row" style="margin-top: 40px; margin-bottom: 20px; ">
