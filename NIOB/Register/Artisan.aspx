@@ -113,11 +113,9 @@
                             </div>
                             <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
                                 <center>
-<<<<<<< HEAD
+
                                      <a class="btn btn-primary custom-btn" onclick="document.getElementById('edu_tab').click();">Next &raquo;</a>
-=======
-                                     <a class="btn btn-primary custom-btn" onclick="document.getElementById('edu_tab').click();">Next &raquo;<%--<i class="fa fa-chevron-right"></i>--%></a>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
+
                                 </center>                               
                             </div>
                     </div>
@@ -307,16 +305,11 @@
                     <!-- Tab 5 -->
                     <div class="tab-pane" id="tab5">
                         <h4 class="tab-headertext greentext">Summary</h4>
-<<<<<<< HEAD
                         <br />
                         <div class="row-fluid">
                             <div class="col-md-6">
                                 <h4>Personal Data</h4>
-=======
-                        <div class="row-fluid">
-                        
-                        <h4>Personal Data</h4>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
+
                    <table class="panel-body">    
                         <tr>
                          <td><label >Title:&nbsp;</label> </td>
@@ -363,15 +356,7 @@
                           </tr>
 
                            <tr>
-<<<<<<< HEAD
-=======
-                          <td><label >Mobile Phone:&nbsp;</label></td>
-                          <td><label runat="server"></label>
-                          </td>
-                          </tr>
 
-                           <tr>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
                           <td><label >Username:&nbsp;</label></td>
                           <td><label runat="server"></label>
                           </td>
@@ -394,32 +379,11 @@
                           <td><label runat="server"></label>
                           </td>
                           </tr>
-<<<<<<< HEAD
                             </table><br/>
                             </div>
                             <div class="col-md-6">
                                 <h4>Education</h4>
-=======
 
-                           <tr>
-                          <td><label >Photograph:&nbsp;</label></td>
-                          <td><label runat="server"></label>
-                          </td>
-                          </tr>
-
-
-
-
-
-
-
-</table><br>
-
-
-
-
-<h4>Education</h4>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
                    <table class="panel-body">    
                         <tr>
                          <td><label >Primary School:&nbsp;</label> </td>
@@ -429,11 +393,8 @@
                         
                          <tr>
 <td>
-<<<<<<< HEAD
                           <label>Certificate Obtained:&nbsp;</label></td>
-=======
-                          <label>Primary Certificate Obtained:&nbsp;</label></td>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
+
                         <td>  <label  runat="server"></label>
 </td>
                           </tr>
@@ -446,11 +407,8 @@
 
                            
                            <tr>
-<<<<<<< HEAD
                           <td><label >Certificate Obtained:&nbsp;</label></td>
-=======
-                          <td><label >Secondary Certificate Obtained:&nbsp;</label></td>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
+
                           <td><label runat="server"></label>
                           </td>
                           </tr>
@@ -462,11 +420,8 @@
                           </tr>
 
                            <tr>
-<<<<<<< HEAD
                           <td><label >Certificate Obtained:&nbsp;</label></td>
-=======
-                          <td><label >Technical Certificate Obtained:&nbsp;</label></td>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
+
                           <td><label runat="server"></label>
                           </td>
                           </tr>
@@ -478,45 +433,26 @@
                           </tr>
 
                            <tr>
-<<<<<<< HEAD
                           <td><label >Certificate Obtained :&nbsp;</label></td>
-=======
-                          <td><label >Tertiary Certificate Obtained :&nbsp;</label></td>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
+
                           <td><label runat="server"></label>
                           </td>
                           </tr>
 
                            <tr>
-<<<<<<< HEAD
                           <td><h4> Membership of Other Trade Associations</h4></td>
-=======
-                          <td><label> Membership of Other Trade Associations :&nbsp;</label></td>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
                          
                           </tr>
 
                            <tr>
-<<<<<<< HEAD
                           <td><label >Association Name:&nbsp;</label></td>
-=======
-                          <td><label >Name of Trade Association:&nbsp;</label></td>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
+
                           <td><label runat="server"></label>
                           </td>
                           </tr>
 
-<<<<<<< HEAD
                           <tr>
-=======
-                           <tr>
-                          <td><label >Name of Trade Association :&nbsp;</label></td>
-                          <td><label runat="server"></label>
-                          </td>
-                          </tr>
 
-                           <tr>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
                           <td><label >Position Held:&nbsp;</label></td>
                           <td><label runat="server"></label>
                           </td>
@@ -529,7 +465,6 @@
                           </tr>
 
 
-<<<<<<< HEAD
 </table><br/>
                             </div>
                             </div>
@@ -539,38 +474,19 @@
                    <table class="panel-body">    
                         <tr>
                          <td><label >Title/Designation:&nbsp;</label> </td>
-=======
-</table><br><br>
 
-<h4>Current Job</h4>
-                   <table class="panel-body">    
-                        <tr>
-                         <td><label >Title/ Designation:&nbsp;</label> </td>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
                          <td><label runat="server"></label></td>
                          </tr>
 
                         
-<<<<<<< HEAD
                          
                           <tr>
                           <td><label >Employer/Project Name:&nbsp;</label></td>
-=======
-                         <tr>
-<td>
-                          <label>Scope of Responsibility:&nbsp;</label></td>
-                        <td>  <label  runat="server"></label>
-</td>
-                          </tr>
 
-                          <tr>
-                          <td><label >Employer Name/ Project Name:&nbsp;</label></td>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
                           <td><label runat="server"></label>
                           </td>
                           </tr>
-
-                           
+                                                         
                            <tr>
                           <td><label >Address:&nbsp;</label></td>
                           <td><label runat="server"></label>
@@ -582,7 +498,6 @@
                           <td><label runat="server"></label>
                           </td>
                           </tr>
-<<<<<<< HEAD
 </table>
                    </div>
                    <div class="col-md-6">
@@ -590,21 +505,7 @@
                    <table class="panel-body">    
                         <tr>
                          <td><label >Employer/Project Name :&nbsp;</label> </td>
-=======
 
-                          
-
-
-
-
-
-</table>
-
-<h4>Previous Jobs </h4>
-                   <table class="panel-body">    
-                        <tr>
-                         <td><label >Employer Name/ Project Name :&nbsp;</label> </td>
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
                          <td><label runat="server"></label></td>
                          </tr>
 
@@ -624,38 +525,13 @@
 <<<<<<< HEAD
 </table>
                    </div>
-=======
-
-                           
-                                         
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
-
-
-
-
-
-<<<<<<< HEAD
-=======
-</table>
-
-
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
-
-
-
-
-
-
 
                         </div>
                         <div class="row" style="margin-top: 40px; margin-bottom: 20px; ">
                             <center>
                                 <a class="btn btn-primary custom-btn" style="display:inline" onclick="document.getElementById('pjob_tab').click();"> &laquo; Back</a> &nbsp;
-<<<<<<< HEAD
                                 <asp:LinkButton CssClass="btn btn-success custom-btn" ID="submitForm" OnClientClick="return submitForm_Click();" style="display:inline" OnClick="submit_Click" runat="server">Submit &check;</asp:LinkButton><br />
-=======
-                                <asp:LinkButton CssClass="btn btn-success custom-btn" ID="submit" style="display:inline" OnClick="submit_Click" runat="server">Submit &check;</asp:LinkButton><br />
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
+
                             </center>                               
                         </div> 
                     </div>            
