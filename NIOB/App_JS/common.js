@@ -35,8 +35,8 @@
     });
 });
 
-<<<<<<< HEAD
     //***********add and delete implement on previous employment page
+$(function () {    
     var count = 0;
     $(".add-button").click(function () {
         if (count >= 4) {
@@ -56,28 +56,18 @@ function deleteEntry(index) {
 }
 //**************
 //**************validate number input cotrol
-=======
 
-
-//validate number input cotrol
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
 $(function () {
     $('._numberInput').on('keydown', function (e) { -1 !== $.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) || /65|67|86|88/.test(e.keyCode) && (!0 === e.ctrlKey || !0 === e.metaKey) || 35 <= e.keyCode && 40 >= e.keyCode || (e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) && (96 > e.keyCode || 105 < e.keyCode) && e.preventDefault() });
 })
 
-<<<<<<< HEAD
 //*****************validate email input on change
-=======
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
 $(function () {
     $('#email').on('change', function () {
         if (!(validateEmail($('#email').val()))) {
             $('#error_lbl').html("");
             $('#error_lbl').append('<span style="color: red; font-style: italic; text-align: right">* invalid email format!</span>');
-<<<<<<< HEAD
             $('#lbl_email').css('color', 'red');
-=======
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
         }
     });
 })
@@ -86,7 +76,6 @@ function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
-<<<<<<< HEAD
 //**********************
 //**************validate constraint on submit event
 function submitForm_Click() {    
@@ -192,8 +181,7 @@ $(function () {
             return e.target.result;
         })
     });
-=======
-
+})
 
 $(function () {
     $('#submit').click(function (e) {
@@ -229,5 +217,4 @@ $(function () {
             if ($('#blahh').attr('src') == undefined || $('#blahh').attr('src') == '') $('#lbl_photo').css('color', 'red');
         }
     })
->>>>>>> 45ef3ad9ae91bf1d1ca600900895385497c4e108
 })
