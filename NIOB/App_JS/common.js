@@ -36,8 +36,8 @@
 });
 
 //***********add and delete implement on previous employment page
+var count = 0;
 $(function() {
-    var count = 0;
     $(".add-button").click(function () {
         if (count >= 4) {
             alert("You cannot add more than 5 entries!!");

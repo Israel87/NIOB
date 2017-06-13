@@ -100,6 +100,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Company\" />
+    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Trainer\" />
   </ItemGroup>
   <ItemGroup>
@@ -395,6 +396,24 @@
     <Content Include="Assessor\Payment.aspx" />
     <Content Include="Assessor\PaymentHistory.aspx" />
     <Content Include="Assessor\UserProfile.aspx" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\NIOB.dll" />
+    <Content Include="bin\NIOB.pdb" />
+    <Content Include="bin\Oracle.DataAccess.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
@@ -403,6 +422,9 @@
     <Content Include="Content\preview.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="Error.aspx" />
+    <Content Include="obj\Debug\NIOB.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\NIOB.dll" />
+    <Content Include="obj\Debug\NIOB.pdb" />
     <Content Include="Register\Artisan.aspx" />
     <Content Include="Register\Assessor.aspx" />
     <Content Include="Register\Category.aspx" />
@@ -450,6 +472,10 @@
     <Content Include="Artisan\assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Artisan\assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Artisan\assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bin\NIOB.dll.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\NIOB.csprojResolveAssemblyReference.cache" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Register\Success.aspx" />
     <Content Include="Register\Trainer.aspx" />
@@ -653,6 +679,9 @@
     <Compile Include="Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Register\Artisan.aspx.cs">
       <DependentUpon>Artisan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

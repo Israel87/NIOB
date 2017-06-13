@@ -522,7 +522,6 @@
                           <td><label runat="server"></label>
                           </td>
                           </tr>
-<<<<<<< HEAD
 </table>
                    </div>
 
