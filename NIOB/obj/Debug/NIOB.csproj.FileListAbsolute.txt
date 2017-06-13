@@ -84,3 +84,24 @@ C:\Users\Coleola\Desktop\NIOB_LIVE\niobproject\NIOB\bin\Newtonsoft.Json.xml
 C:\Users\Coleola\Desktop\NIOB_LIVE\niobproject\NIOB\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Coleola\Desktop\NIOB_LIVE\niobproject\NIOB\obj\Debug\NIOB.pdb
 C:\Users\Coleola\Desktop\NIOB_LIVE\niobproject\NIOB\obj\Debug\NIOB.csprojResolveAssemblyReference.cache
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\NIOB.dll.config
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\NIOB.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\NIOB.pdb
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Antlr3.Runtime.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Newtonsoft.Json.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\System.Web.Optimization.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\WebGrease.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\System.Web.Optimization.xml
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Antlr3.Runtime.pdb
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Newtonsoft.Json.xml
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\obj\Debug\NIOB.csprojResolveAssemblyReference.cache
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\obj\Debug\NIOB.dll
+C:\Users\St. Whales\Documents\My Chams\Codes\NIOB\NIOB\obj\Debug\NIOB.pdb
