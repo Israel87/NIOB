@@ -39,7 +39,14 @@
                 <h4 class="content-text">Thank you for registering with NIOB, your application is being processed.</h4>
                 <h5 class="content-text">You will receive an email once your application is approved. Kindly keep your username and password.</h5>
 
-            </div><br /><br /><br />
+            </div><br />
+                 <div>
+                     <center>
+                         <a href="/Login" class="btn btn-default btn-lg">Home</a>
+                     </center>
+                     
+                 </div>
+                 <br /><br />
         </center>
         </div>
        

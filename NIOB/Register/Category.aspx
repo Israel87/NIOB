@@ -40,28 +40,26 @@
 
                                     </p>
                                 </div>
-        
-                                <div class="col-md-6">
-                             <img  src="../Content/images/certified.png" class="img-category"/><br /><br />
-                            <p>
-                                <a href="Company" class="btn btn-success">Company &raquo;</a>
-                            </p>
-                        </div>
-        
-                            </div>
-                            <div class="row">
                                 <div class="col-md-6">
                                     <img  src="../Content/images/user.png" class="img-category"/><br /><br />
                                     <p>
                                         <a href="Assessor" class="btn btn-success">Assessor &raquo;</a>
                                     </p>
-                                </div>
+                                </div>        
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                      <img  src="../Content/images/User_Group.png" class="img-category"/><br /><br />
                                     <p>
                                         <a href="Trainer" class="btn btn-success"> Certified Trainer &raquo;</a>
                                     </p>
-                                </div>        
+                                </div>   
+                                <div class="col-md-6">
+                                 <img  src="../Content/images/certified.png" class="img-category"/><br /><br />
+                                    <p>
+                                        <a href="Company" class="btn btn-success">Company &raquo;</a>
+                                    </p>
+                                </div>     
                             </div>
                         </div>
                     </center>

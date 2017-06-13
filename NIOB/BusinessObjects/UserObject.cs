@@ -10,13 +10,14 @@ namespace NIOB.BusinessObjects
         public Biodata biodata { get; set; }
         public Access_Log access_log { get; set; }
         public Tbl_User tbl_user { get; set; }
-        public Employment_Info emp_info { get; set; }
+        public List<Employment_Info> emp_info { get; set; }
         public Address_Info address_info { get; set; }
         public Education_info edu_info { get; set; }
-        public Payment_Info payment_info { get; set; }
+        public List<Payment_Info> payment_info { get; set; }
         public Association association { get; set; }
-        public Document_Info doc_info { get; set; }
-        public Training_Info training_info { get; set; }
+        public List<Document_Info> doc_info { get; set; }
+        public List<Training_Info> training_info { get; set; }
+        public ActivationKey acticationkey { get; set; }
 
     }
 

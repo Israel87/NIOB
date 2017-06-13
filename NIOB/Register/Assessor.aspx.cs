@@ -85,11 +85,11 @@ namespace NIOB.Register
             //inject user info into user object
             user.biodata = userbiodata;
             user.edu_info = usereduinfo;
-            user.emp_info = userempinfo;
+            user.emp_info.Add(userempinfo);
             user.tbl_user = usertbl_user;
             user.association = userassociation;
             user.address_info = useraddressinfo;
-            user.doc_info = userdocinfo;
+            user.doc_info.Add(userdocinfo);
 
             //generate activation key and update user activation info
 

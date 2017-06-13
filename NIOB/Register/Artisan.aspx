@@ -28,16 +28,17 @@
            <h2 class="greentext" style="margin-top: 0;">Welcome to the Nigeria Institute of Building</h2>
         </div>
         <br /> 
-        <h4 class="greentext" style="margin-bottom: 0;">Artisan Registration</h4><br />
+        <h4 class="greentext" style="margin-bottom: 0;">Artisan Registration</h4><br />   
+            <p id="error_lbl"></p>        
     </center>
     <div class="container well">
         <div class="row-fluid">
-                <ul class="nav nav-tabs col-md-10 col-md-offset-1">
-                    <li class="active"><a href="#tab1" data-toggle="tab">Personal Data</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Education</a></li>
-                    <li><a href="#tab3" data-toggle="tab">Current Job</a></li>
-                    <li><a href="#tab4" data-toggle="tab">Previous Jobs</a></li>
-                    <li><a href="#tab5" data-toggle="tab">Summary</a></li>
+                <ul class="nav nav-tabs col-md-10 col-md-offset-1" id="mytabs">
+                    <li class="active"><a href="#tab1" id="pdata_tab" data-toggle="tab">Personal Data</a></li>
+                    <li><a href="#tab2" id="edu_tab" data-toggle="tab">Education</a></li>
+                    <li><a href="#tab3" id="cjob_tab" data-toggle="tab">Current Job</a></li>
+                    <li><a href="#tab4" id="pjob_tab" data-toggle="tab">Previous Jobs</a></li>
+                    <li><a href="#tab5" id="summary_tab" data-toggle="tab">Summary</a></li>
                 </ul>
             </div>
             <div class="row-fluid">
@@ -63,7 +64,7 @@
                                         </select><br/>
                                         <label id="lbl_firstname">First Name<span style="color: red; font-style: italic; text-align: right">*</span> </label>
                                         <input type="text" name="firstname" id="firstname" class="form-control" runat="server" style="text-transform: uppercase;" required="required" /><br/>
-                                        <label id="lbl_lastname">Last Name </label>
+                                        <label id="lbl_lastname">Last Name<span style="color: red; font-style: italic; text-align: right">*</span> </label>
                                         <input type="text" name="lastName" id="lastname" class="form-control" runat="server" style="text-transform: uppercase;" /><br/> 
                                         <label id="lbl_gender">Gender<span style="color: red; font-style: italic; text-align: right">*</span> </label>
                                         <select class="form-control" id="gender" name="gender" runat="server" required="required">
@@ -74,19 +75,19 @@
                                         <label id="lbl_dob">Date of Birth<span style="color: red; font-style: italic; text-align: right">*</span></label>
                                         <input type="date" name="dob" id="dob" class="form-control" required="required" /><br />    
                                          <label id="lbl_phoneNo">Mobile Phone<span style="color: red; font-style: italic; text-align: right">*</span> </label>
-                                        <input type="text" name="phoneNo" id="phoneno" class="form-control _numberInput" runat="server" required="required" /><br />
-                                        <label>Email Address <span style="color: red; font-style: italic; text-align: right">*</span></label>
+                                        <input type="text" name="phoneNo" id="phoneNo" class="form-control _numberInput" runat="server" required="required" /><br />
+                                        <label id="lbl_email">Email Address <span style="color: red; font-style: italic; text-align: right">*</span></label>
                                         <input type="email" class="form-control" name="email" id="email" runat="server" required="required" /><br/>                                    
                                     </div>
                                     <div class="col-md-5">
                                         <label id="lbl_username">Username<span style="color: red; font-style: italic; text-align: right">*</span> </label>
                                         <input type="text" name="username" id="username" class="form-control" runat="server" required="required" /><br/>
 
-                                        <label id="lbl_password1">Password<span style="color: red; font-style: italic; text-align: right">*</span> </label>
+                                        <label id="lbl_password">Password<span style="color: red; font-style: italic; text-align: right">*</span> </label>
                                         <input type="password" name="password" id="password" class="form-control" runat="server" required="required" /><br/>
 
                                         <label id="lbl_confirmpassword">Confirm Password<span style="color: red; font-style: italic; text-align: right">*</span> </label>
-                                        <input type="password" name="confirmpassword" id="confpassword" class="form-control" runat="server" required="required" /><br/>
+                                        <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" runat="server" required="required" /><br/>
                                         <label>Residential Address </label>
                                         <textarea class="form-control" name="houseAddress" id="houseAddress" rows="4" style="margin-bottom: 15px; text-transform: uppercase; resize: none;" runat="server"></textarea><br/>
                                         <label>State of Origin </label>
@@ -103,8 +104,7 @@
                                         <img id="blahh" name="Photograph" runat="server" style="height: 120px; width: 100%; margin-top: 15px" />
 
                                         <br />
-                                        <input type="file" name="selectedFile" id="photo" style="display: none;" accept="image/jpg, image/jpeg" multiple="multiple"
-                                            runat="server" required="required" /><br />
+                                        <input type="file" name="selectedFile" id="photo" style="display: none;" accept="image/jpg, image/jpeg" multiple="multiple" runat="server" required="required" /><br />
                                         <center>
                                             <input type="button" class="btn btn-default custom-btn" value="Upload Photo" onclick="document.getElementById('photo').click();" />
                                         </center> 
@@ -113,7 +113,7 @@
                             </div>
                             <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
                                 <center>
-                                     <a class="btn btn-primary custom-btn">Next &raquo;<%--<i class="fa fa-chevron-right"></i>--%></a>
+                                     <a class="btn btn-primary custom-btn" onclick="document.getElementById('edu_tab').click();">Next &raquo;</a>
                                 </center>                               
                             </div>
                     </div>
@@ -218,8 +218,8 @@
                         </div>                        
                         <div class="row" style="margin-top: 20px; margin-bottom: 20px; ">
                             <center>
-                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline"> &laquo; Back</a> &nbsp;
-                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline">Next &raquo;</a>
+                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline" onclick="document.getElementById('pdata_tab').click();"> &laquo; Back</a> &nbsp;
+                                <a class="btn btn-primary custom-btn" style="margin-top: 20px; display:inline" onclick="document.getElementById('cjob_tab').click();">Next &raquo;</a>
                             </center>                               
                         </div>                         
                     </div>      
@@ -254,8 +254,8 @@
                         </div>                        
                         <div class="row" style="margin-top: 20px; margin-bottom: 20px; ">
                             <center>
-                                <a class="btn btn-primary custom-btn" style="display:inline" "> &laquo; Back</a> &nbsp;
-                                <a class="btn btn-primary custom-btn" style="display:inline" ">Next &raquo;</a>
+                                <a class="btn btn-primary custom-btn" style="display:inline"  onclick="document.getElementById('edu_tab').click();" > &laquo; Back</a> &nbsp;
+                                <a class="btn btn-primary custom-btn" style="display:inline" onclick="document.getElementById('pjob_tab').click();">Next &raquo;</a>
                             </center>                               
                         </div>                         
                     </div> 
@@ -265,30 +265,32 @@
                         <div class="row-fluid">
                             <h4 class="tab-headertext greentext">Previous Jobs </h4>
                             <br />
-                            <div id="previousjobs">
-                                <div class="col-md-4">
-                                    <label>Employer Name/ Project Name </label>
-                                    <input type="text" name="prev_employername" id="Text3" class="form-control " runat="server" />
-                                    <br />
-                                </div>
-                                <div class="col-md-3">
-                                    <label>From </label>
-                                    <input type="date" name="datefrom" id="datefrom" class="form-control" required="required" />
-                                    <br />
-                                </div>
-                                <div class="col-md-3">
-                                    <label>To </label>
-                                    <input type="date" name="dateto" id="dateto" class="form-control" required="required" />
-                                    <br />
-                                </div>     
-                                <div class="col-md-2">
+                            <div id="prev_employmentlist">
+                                <div class="previousjobs">
+                                    <div class="col-md-4">
+                                        <label>Employer Name/ Project Name </label>
+                                        <input type="text" name="prev_employername" id="prev_employername" class="form-control " runat="server" />
+                                        <br />
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>From </label>
+                                        <input type="date" name="datefrom" id="datefrom" class="form-control" required="required" />
+                                        <br />
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>To </label>
+                                        <input type="date" name="dateto" id="dateto" class="form-control" required="required" />
+                                        <br />
+                                    </div>     
+                                    <div class="col-md-2">
                                     <label></label>
                                     <div style="margin-top: 10px;">
-                                        <a class="btn btn-info custom-btn" style="display:inline"> &plus; Add</a>
-                                        <a class="btn btn-danger custom-btn" style="display:inline"> &times; Del</a>
+                                        <a class="btn btn-info custom-btn add-button" style="display:inline"> &plus; Add More </a>
+                                        <%--<a class="btn btn-danger custom-btn delete-button" style="display:inline"> &times; Del</a>--%>
                                     </div>                                    
                                 </div>  
-                            </div>             
+                                </div>  
+                            </div>           
                         </div>                        
                         <div class="row" style="margin-top: 40px; margin-bottom: 20px; ">
                             <center>
@@ -301,13 +303,231 @@
                     <!-- Tab 5 -->
                     <div class="tab-pane" id="tab5">
                         <h4 class="tab-headertext greentext">Summary</h4>
-                        <div>
+                        <br />
+                        <div class="row-fluid">
+                            <div class="col-md-6">
+                                <h4>Personal Data</h4>
+                   <table class="panel-body">    
+                        <tr>
+                         <td><label >Title:&nbsp;</label> </td>
+                         <td><label runat="server"></label></td>
+                         </tr>
+
+                        
+                         <tr>
+<td>
+                          <label>Firstname:&nbsp;</label></td>
+                        <td>  <label  runat="server"></label>
+</td>
+                          </tr>
+
+                          <tr>
+                          <td><label >Lastname:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Gender:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+
+                           <tr>
+                          <td><label >Date of Birth:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Mobile Phone:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Email Address:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Username:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Residential Address:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >State of Origin:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label > LGA:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+                            </table><br/>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Education</h4>
+                   <table class="panel-body">    
+                        <tr>
+                         <td><label >Primary School:&nbsp;</label> </td>
+                         <td><label runat="server"></label></td>
+                         </tr>
+
+                        
+                         <tr>
+<td>
+                          <label>Certificate Obtained:&nbsp;</label></td>
+                        <td>  <label  runat="server"></label>
+</td>
+                          </tr>
+
+                          <tr>
+                          <td><label >Secondary School:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           
+                           <tr>
+                          <td><label >Certificate Obtained:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Technical/NVQ:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Certificate Obtained:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Tertiary Institution:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Certificate Obtained :&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><h4> Membership of Other Trade Associations</h4></td>
+                         
+                          </tr>
+
+                           <tr>
+                          <td><label >Association Name:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                          <tr>
+                          <td><label >Position Held:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                          <tr>
+                          <td><label >Date Joined:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+
+</table><br/>
+                            </div>
+                            </div>
+               <div class="row-fluid">
+                   <div class="col-md-6">
+                       <h4>Current Job</h4>
+                   <table class="panel-body">    
+                        <tr>
+                         <td><label >Title/Designation:&nbsp;</label> </td>
+                         <td><label runat="server"></label></td>
+                         </tr>
+
+                        
+                         
+                          <tr>
+                          <td><label >Employer/Project Name:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           
+                           <tr>
+                          <td><label >Address:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+
+                           <tr>
+                          <td><label >Appointment Date:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+</table>
+                   </div>
+                   <div class="col-md-6">
+                       <h4>Previous Jobs </h4>
+                   <table class="panel-body">    
+                        <tr>
+                         <td><label >Employer/Project Name :&nbsp;</label> </td>
+                         <td><label runat="server"></label></td>
+                         </tr>
+
+                        
+                         <tr>
+<td>
+                          <label>From :&nbsp;</label></td>
+                        <td>  <label  runat="server"></label>
+</td>
+                          </tr>
+
+                          <tr>
+                          <td><label >To:&nbsp;</label></td>
+                          <td><label runat="server"></label>
+                          </td>
+                          </tr>
+</table>
+                   </div>
+
+
+
+
+
+
+
+
+
+
+
 
                         </div>
                         <div class="row" style="margin-top: 40px; margin-bottom: 20px; ">
                             <center>
-                                <a class="btn btn-primary custom-btn" style="display:inline"> &laquo; Back</a> &nbsp;
-                                <asp:LinkButton CssClass="btn btn-success custom-btn" ID="submit" style="display:inline" OnClick="submit_Click" runat="server">Submit &check;</asp:LinkButton><br />
+                                <a class="btn btn-primary custom-btn" style="display:inline" onclick="document.getElementById('pjob_tab').click();"> &laquo; Back</a> &nbsp;
+                                <asp:LinkButton CssClass="btn btn-success custom-btn" ID="submitForm" OnClientClick="return submitForm_Click();" style="display:inline" OnClick="submit_Click" runat="server">Submit &check;</asp:LinkButton><br />
                             </center>                               
                         </div> 
                     </div>            
@@ -331,6 +551,7 @@
     <script src="../Scripts/bootstrap.min.js"></script>
     <script src="../Scripts/tabs-addon.js"></script>
     <script src="../App_JS/common.js"></script>
+    <script src="../App_JS/sharedjs.js"></script>
     <script src="../App_JS/validation.js"></script>
     <script>
         getWindowHeight();

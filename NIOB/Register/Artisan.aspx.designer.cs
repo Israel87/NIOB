@@ -49,13 +49,13 @@ namespace NIOB.Register {
         protected global::System.Web.UI.HtmlControls.HtmlSelect gender;
         
         /// <summary>
-        /// phoneno control.
+        /// phoneNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText phoneno;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText phoneNo;
         
         /// <summary>
         /// email control.
@@ -85,13 +85,13 @@ namespace NIOB.Register {
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword password;
         
         /// <summary>
-        /// confpassword control.
+        /// confirmpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword confpassword;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword confirmpassword;
         
         /// <summary>
         /// houseAddress control.
@@ -337,21 +337,21 @@ namespace NIOB.Register {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea employeraddress;
         
         /// <summary>
-        /// Text3 control.
+        /// prev_employername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text3;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText prev_employername;
         
         /// <summary>
-        /// submit control.
+        /// submitForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton submit;
+        protected global::System.Web.UI.WebControls.LinkButton submitForm;
     }
 }

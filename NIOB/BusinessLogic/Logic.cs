@@ -11,7 +11,6 @@ namespace NIOB.BusinessLogic
 {
     public class Logic
     {
-        private static string connString = ConfigurationManager.ConnectionStrings["OracleString"].ConnectionString;
         ConnectionManager connMngr = new ConnectionManager();
 
         internal UserObject GetUser(string _uname, string _pwd)

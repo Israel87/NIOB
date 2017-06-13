@@ -3,6 +3,8 @@ using NIOB.BusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -23,9 +25,9 @@ namespace NIOB.Register
         protected void submit_Click(object sender, EventArgs e)
         {
             //validate required field
-            if (!validateEmail())
+            if (!checkValidation())
             {
-                return;
+                Response.Redirect("/Error");
             }
 
             //instantiate all user info class
@@ -40,37 +42,37 @@ namespace NIOB.Register
             ////collect html field values into user info params
             //biodata
             userbiodata.Title = title.Value;
-            userbiodata.Firstname = firstname.Value;
-            userbiodata.Surname = lastname.Value;
+            userbiodata.Firstname = firstname.Value.Trim();
+            userbiodata.Surname = lastname.Value.Trim();
             userbiodata.DOB = Request.Form["dob"].ToString();
             userbiodata.Gender = gender.Value;
-            userbiodata.PhoneNumber = phoneno.Value;
+            userbiodata.PhoneNumber = phoneNo.Value.Trim();
             userbiodata.State = state.Value;
 
             //tbl_user info
-            usertbl_user.Username = username.Value;
-            usertbl_user.Password = password.Value;
-            usertbl_user.Email = email.Value;
+            usertbl_user.Username = username.Value.Trim();
+            usertbl_user.Password = password.Value.Trim();
+            usertbl_user.Email = email.Value.Trim();
             usertbl_user.UserType = 1;
 
             //address info
-            useraddressinfo.Street = houseAddress.Value;
+            useraddressinfo.Street = houseAddress.Value.Trim();
             useraddressinfo.LGA = lga.Value;
             useraddressinfo.State = state.Value;
 
             //employment info
             userempinfo.Title = designation.Value;
-            userempinfo.Employer = employername.Value;
-            userempinfo.Scope = scopeofresp.Value;
-            userempinfo.Address = employeraddress.Value;
+            userempinfo.Employer = employername.Value.Trim();
+            userempinfo.Scope = scopeofresp.Value.Trim();
+            userempinfo.Address = employeraddress.Value.Trim();
             userempinfo.StartDate = Request.Form["appointmentdate"];
             userempinfo.Status = "current";
 
             //education info
-            usereduinfo.Primary = primary.Value;
-            usereduinfo.Secondary = secondary.Value;
-            usereduinfo.Technical = technical.Value;
-            usereduinfo.Tertiary = tertiary.Value;
+            usereduinfo.Primary = primary.Value.Trim();
+            usereduinfo.Secondary = secondary.Value.Trim();
+            usereduinfo.Technical = technical.Value.Trim();
+            usereduinfo.Tertiary = tertiary.Value.Trim();
             usereduinfo.PrimaryCert = primaryCert.Value;
             usereduinfo.SecondaryCert = secondaryCert.Value;
             usereduinfo.TechnicalCert = technicalCert.Value;
@@ -81,18 +83,18 @@ namespace NIOB.Register
             userdocinfo.DocumentUrl = primarycertUpload.Value;
             
             //association
-            userassociation.Name = associationname.Value;
-            userassociation.PositionHeld = positionheld.Value;
+            userassociation.Name = associationname.Value.Trim();
+            userassociation.PositionHeld = positionheld.Value.Trim();
             userassociation.Datejoined = Request.Form["assodatejoined"];
 
             //inject user info into user object
             user.biodata = userbiodata;
             user.edu_info = usereduinfo;
-            user.emp_info = userempinfo;
+            user.emp_info.Add(userempinfo);
             user.tbl_user = usertbl_user;
             user.association = userassociation;
             user.address_info = useraddressinfo;
-            user.doc_info = userdocinfo;
+            user.doc_info.Add(userdocinfo);
 
             //generate activation key and update user activation info
 
@@ -113,11 +115,41 @@ namespace NIOB.Register
             }
         }
 
-        private bool validateEmail()
+
+        public bool checkValidation()
         {
-            throw new NotImplementedException();
+
+            if (title.Value == "" || firstname.Value == "" || lastname.Value == "" || gender.Value == "" || username.Value == "" || password.Value == "" || password.Value.Length < 8)
+            {
+                return false;
+            }
+
+            if (checkForEmail(email.Value.Trim()) != true || checkForPhoneNumber(phoneNo.Value.Trim()) != true)
+            {
+                return false;
+            }
+
+            return true;            
         }
 
+        public static bool checkForEmail(string email)
+        {
+            bool IsValid = false;
+            Regex reg = new Regex(@"^([\w\.\-+)@([\w\-]+)((\.(\w){2,3})+)$");
+            if (reg.IsMatch(email))
+                IsValid = true;
+            return IsValid;
+        }
+
+        public static bool checkForPhoneNumber(string phone)
+        {
+            bool IsValid = false;
+            Regex r = new Regex(@"^[0]\d{10}$");
+            if (r.IsMatch(phone))
+                IsValid = true;
+            return IsValid;
+        }
+       
         private void populateDDLs()
         {
             //Populate your stateOfOriginDDL
