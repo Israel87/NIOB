@@ -302,7 +302,6 @@
                     <!-- Tab 5 -->
                     <div class="tab-pane" id="tab5">
                         <h4 class="tab-headertext greentext">Summary</h4>
-<<<<<<< HEAD
                         <br />
                         <div class="row-fluid">
                             <div class="col-md-6">
@@ -444,7 +443,6 @@
                           </td>
                           </tr>
 
-<<<<<<< HEAD
                           <tr>
 
                           <td><label >Position Held:&nbsp;</label></td>
